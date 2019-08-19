@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'CardFlipsLayout_Example' do
+  pod 'CardFlipsLayout', :path => '../'
+
+  target 'CardFlipsLayout_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
