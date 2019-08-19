@@ -35,7 +35,7 @@ Use UIViewPropertyAnimator : Making advanced animations.
   s.source_files = 'CardFlipsLayout/Classes/**/*'
   
   s.resource_bundles = {
-    'CardFlipsLayout' => ['CardFlipsLayout/Assets/*.xcasset']
+    'CardFlipsLayout' => ['CardFlipsLayout/Assets/*.xcassets']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
