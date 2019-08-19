@@ -8,6 +8,10 @@
 ## Preview
 
 A simple animated card flips Lib.
+Base on UICollectionView, UICollectionViewCell.
+Use UIViewPropertyAnimator : Making advanced animations.
+
+![](https://github.com/der1598c/CardFlipsLayout/blob/master/demo.gif)
 
 ## Example
 
