@@ -1,0 +1,16 @@
+PODS:
+  - CardFlipsLayout (0.1.0)
+
+DEPENDENCIES:
+  - CardFlipsLayout (from `../`)
+
+EXTERNAL SOURCES:
+  CardFlipsLayout:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CardFlipsLayout: 3941ca76088609e8f5f637a290690be35748a252
+
+PODFILE CHECKSUM: c3bea75de9b2cf25d95b8a440b1c94e0e964230f
+
+COCOAPODS: 1.6.1

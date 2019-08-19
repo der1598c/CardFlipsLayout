@@ -1,0 +1,22 @@
+{
+  "name": "CardFlipsLayout",
+  "version": "0.1.0",
+  "summary": "A short description of CardFlipsLayout.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/der1598c/CardFlipsLayout",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "der1598c": "leyee.h@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/der1598c/CardFlipsLayout.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "CardFlipsLayout/Classes/**/*"
+}

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -20,11 +20,47 @@
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="QKI-Lj-Vtq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="b1N-nl-iGe">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XZb-8C-NoJ">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="3Rp-b4-9LZ"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="nSv-F1-Xyy"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QKI-Lj-Vtq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="6Jk-Df-7SU"/>
+                            <constraint firstItem="QKI-Lj-Vtq" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="DfD-jG-lJ8"/>
+                            <constraint firstItem="b1N-nl-iGe" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="KEb-j6-wvj"/>
+                            <constraint firstItem="b1N-nl-iGe" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Pzo-1d-SRm"/>
+                            <constraint firstAttribute="trailing" secondItem="QKI-Lj-Vtq" secondAttribute="trailing" id="RCH-ni-Y9I"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="QKI-Lj-Vtq" secondAttribute="bottom" id="Ra3-HF-OHB"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="b1N-nl-iGe" secondAttribute="bottom" id="fca-hn-htn"/>
+                            <constraint firstAttribute="trailing" secondItem="b1N-nl-iGe" secondAttribute="trailing" id="zlb-F7-Tex"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="overviewView" destination="b1N-nl-iGe" id="ez7-OG-INX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="background" width="480" height="800"/>
+    </resources>
 </document>
