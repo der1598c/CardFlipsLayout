@@ -15,8 +15,8 @@
 		A9EFD36C230A33BA003AC09C /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EFD368230A33BA003AC09C /* Items.swift */; };
 		A9EFD36D230A33BA003AC09C /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EFD369230A33BA003AC09C /* CollectionViewCell.swift */; };
 		A9EFD36F230A33BA003AC09C /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9EFD36B230A33BA003AC09C /* FlowLayout.swift */; };
-		A9EFD371230A3410003AC09C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9EFD370230A3410003AC09C /* Images.xcassets */; };
 		A9EFD373230A3522003AC09C /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9EFD372230A3522003AC09C /* CollectionViewCell.xib */; };
+		A9EFD375230ACE60003AC09C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9EFD374230ACE60003AC09C /* Images.xcassets */; };
 		AD84911EC4A32884667094B733DF74AA /* CardFlipsLayout-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BE4E7C73653ABDA0FE9E1B5F7C111599 /* CardFlipsLayout-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AECC1FE7A3E1B5A302B47704FE5CE677 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		EA40CB81E6DC7F27BDA3DFC94ACB8E85 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
@@ -61,8 +61,8 @@
 		A9EFD368230A33BA003AC09C /* Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Items.swift; path = CardFlipsLayout/Classes/Items.swift; sourceTree = "<group>"; };
 		A9EFD369230A33BA003AC09C /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = CardFlipsLayout/Classes/CollectionViewCell.swift; sourceTree = "<group>"; };
 		A9EFD36B230A33BA003AC09C /* FlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlowLayout.swift; path = CardFlipsLayout/Classes/FlowLayout.swift; sourceTree = "<group>"; };
-		A9EFD370230A3410003AC09C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A9EFD372230A3522003AC09C /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CollectionViewCell.xib; path = CardFlipsLayout/Classes/CollectionViewCell.xib; sourceTree = "<group>"; };
+		A9EFD374230ACE60003AC09C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CardFlipsLayout/Assets/Images.xcassets; sourceTree = "<group>"; };
 		ABE4CF730EADEE351AD7B2224C917DAD /* CardFlipsLayout.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CardFlipsLayout.modulemap; sourceTree = "<group>"; };
 		AD0ABC7EDB17F62F633C7864552E694E /* Pods-CardFlipsLayout_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-CardFlipsLayout_Tests-umbrella.h"; sourceTree = "<group>"; };
 		AE793109D80BB2674504F755517BB81C /* Pods-CardFlipsLayout_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CardFlipsLayout_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -172,7 +172,7 @@
 				A9EFD369230A33BA003AC09C /* CollectionViewCell.swift */,
 				A9EFD372230A3522003AC09C /* CollectionViewCell.xib */,
 				A9EFD36B230A33BA003AC09C /* FlowLayout.swift */,
-				A9EFD370230A3410003AC09C /* Images.xcassets */,
+				A9EFD374230ACE60003AC09C /* Images.xcassets */,
 				0F1185CDDB1A5D1C46CDBDE880BC4620 /* Pod */,
 				17DDE2E35490DE617DF18D8745FF7784 /* Support Files */,
 			);
@@ -367,7 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9EFD373230A3522003AC09C /* CollectionViewCell.xib in Resources */,
-				A9EFD371230A3410003AC09C /* Images.xcassets in Resources */,
+				A9EFD375230ACE60003AC09C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
