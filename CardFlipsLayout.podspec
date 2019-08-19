@@ -26,7 +26,7 @@ Use UIViewPropertyAnimator : Making advanced animations.
   s.homepage         = 'https://github.com/der1598c/CardFlipsLayout'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'der1598c' }
+  s.author           = { 'der1598c' => 'der1598c@gmail.com' }
   s.source           = { :git => 'https://github.com/der1598c/CardFlipsLayout.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
