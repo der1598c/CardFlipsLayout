@@ -46,7 +46,7 @@
 		A08D63711F8C97B99796C390 /* Pods-CardFlipsLayout_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardFlipsLayout_Tests.debug.xcconfig"; path = "Target Support Files/Pods-CardFlipsLayout_Tests/Pods-CardFlipsLayout_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A371745AAFAEE370D9DB34D3 /* Pods_CardFlipsLayout_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CardFlipsLayout_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA6E479BBF25E63D991C2327 /* Pods-CardFlipsLayout_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CardFlipsLayout_Example.release.xcconfig"; path = "Target Support Files/Pods-CardFlipsLayout_Example/Pods-CardFlipsLayout_Example.release.xcconfig"; sourceTree = "<group>"; };
-		F1417163680C78CA3CB407BF /* CardFlipsLayout.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CardFlipsLayout.podspec; path = ../CardFlipsLayout.podspec; sourceTree = "<group>"; };
+		F1417163680C78CA3CB407BF /* CardFlipsLayout.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = CardFlipsLayout.podspec; path = ../CardFlipsLayout.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

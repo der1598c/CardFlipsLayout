@@ -20,6 +20,11 @@ private enum State {
     }
 }
 
+public enum AniType {
+    case normal_Ani
+    case springs_Ani
+}
+
 open class CollectionViewCell: UICollectionViewCell, UIGestureRecognizerDelegate {
 
     override open func awakeFromNib() {
@@ -47,15 +52,9 @@ open class CollectionViewCell: UICollectionViewCell, UIGestureRecognizerDelegate
     
     private var initialFrame: CGRect?
     private var state: State = .collapsed
+    private var aniType: AniType = .normal_Ani
     private lazy var animator: UIViewPropertyAnimator = {
-        //1.
-        //        let cubicTiming = UICubicTimingParameters(controlPoint1: CGPoint(x: 0.17, y: 0.67), controlPoint2: CGPoint(x: 0.76, y: 1.0))
-        //        return UIViewPropertyAnimator(duration: 0.3, timingParameters: cubicTiming)
-        //2.
-        //        let springTiming = UISpringTimingParameters(mass: 1.0, stiffness: 2.0, damping: 0.2, initialVelocity: .zero)
-        //        return UIViewPropertyAnimator(duration: 0.3, timingParameters: springTiming)
-        //Original
-        return UIViewPropertyAnimator(duration: 0.3, curve: .easeInOut)
+        return getAnimator()
     }()
     
     private let popupOffset: CGFloat = (UIScreen.main.bounds.height - cellSize.height)/2.0
@@ -69,6 +68,20 @@ open class CollectionViewCell: UICollectionViewCell, UIGestureRecognizerDelegate
         
     }()
     
+    private func getAnimator() -> UIViewPropertyAnimator {
+        //1.
+        //        let cubicTiming = UICubicTimingParameters(controlPoint1: CGPoint(x: 0.17, y: 0.67), controlPoint2: CGPoint(x: 0.76, y: 1.0))
+        //        return UIViewPropertyAnimator(duration: 0.3, timingParameters: cubicTiming)
+        //2.
+        switch aniType {
+        case .normal_Ani:
+            return UIViewPropertyAnimator(duration: 0.3, curve: .easeInOut)
+        case .springs_Ani:
+            let springTiming = UISpringTimingParameters(mass: 0.1, stiffness: 20.0, damping: 0.8, initialVelocity: .zero)
+            return UIViewPropertyAnimator(duration: 0.3, timingParameters: springTiming)
+        }
+    }
+    
     open func configure(with items: Items, collectionView: UICollectionView, index: Int) {
         titleLab.text = items.name
         imageImgV.image = UIImage(named: items.image)
@@ -77,6 +90,19 @@ open class CollectionViewCell: UICollectionViewCell, UIGestureRecognizerDelegate
         
         self.collectionView = collectionView
         self.index = index
+    }
+    
+    open func setCloseImage(with imageName: String) {
+        if var img = UIImage(named: imageName) {
+            closeBtn.setTitle("", for: UIControlState.normal)
+            img = img.resizeImage(targetSize: closeBtn.frame.size)
+            closeBtn.setImage(img, for: UIControlState.normal)
+        }
+    }
+    
+    open func setAnimationType(type: AniType) {
+        aniType = type
+        animator = getAnimator()
     }
     
     override open func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
@@ -251,7 +277,7 @@ open class CollectionViewCell: UICollectionViewCell, UIGestureRecognizerDelegate
 }
 
 extension UITextView {
-    
+    //Currently not use.
     func increaseFontSize () {
         self.font =  UIFont(name: self.font!.fontName, size: self.font!.pointSize+1)!
     }
@@ -276,5 +302,22 @@ extension UIView {
         UIGraphicsEndImageContext()
         
         return image
+    }
+}
+
+extension UIImage {
+    func resizeImage(targetSize: CGSize) -> UIImage {
+        let size = self.size
+        let widthRatio  = targetSize.width  / size.width
+        let heightRatio = targetSize.height / size.height
+        let newSize = widthRatio > heightRatio ?  CGSize(width: size.width * heightRatio, height: size.height * heightRatio) : CGSize(width: size.width * widthRatio,  height: size.height * widthRatio)
+        let rect = CGRect(x: 0, y: 0, width: newSize.width, height: newSize.height)
+        
+        UIGraphicsBeginImageContextWithOptions(newSize, false, 1.0)
+        self.draw(in: rect)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        return newImage!
     }
 }
