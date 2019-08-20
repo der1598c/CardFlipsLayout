@@ -77,7 +77,7 @@ open class CollectionViewCell: UICollectionViewCell, UIGestureRecognizerDelegate
         case .normal_Ani:
             return UIViewPropertyAnimator(duration: 0.3, curve: .easeInOut)
         case .springs_Ani:
-            let springTiming = UISpringTimingParameters(mass: 0.1, stiffness: 20.0, damping: 0.8, initialVelocity: .zero)
+            let springTiming = UISpringTimingParameters(mass: 0.1, stiffness: 25.0, damping: 0.8, initialVelocity: .zero)
             return UIViewPropertyAnimator(duration: 0.3, timingParameters: springTiming)
         }
     }
@@ -94,9 +94,9 @@ open class CollectionViewCell: UICollectionViewCell, UIGestureRecognizerDelegate
     
     open func setCloseImage(with imageName: String) {
         if var img = UIImage(named: imageName) {
-            closeBtn.setTitle("", for: UIControlState.normal)
+            closeBtn.setTitle("", for: .normal)
             img = img.resizeImage(targetSize: closeBtn.frame.size)
-            closeBtn.setImage(img, for: UIControlState.normal)
+            closeBtn.setImage(img, for: .normal)
         }
     }
     
