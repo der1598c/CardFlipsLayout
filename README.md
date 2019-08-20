@@ -91,9 +91,15 @@ func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection s
 }
 
 func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//Require
     let cell = overviewView.dequeueReusableCell(withReuseIdentifier: CollectionViewCell.identifier, for: indexPath) as! CollectionViewCell
     cell.configure(with: items[indexPath.item], collectionView: overviewView, index: indexPath.row)
-    //cell.setCornerRadius(radius: 6)
+
+//Custom
+    cell.setCornerRadius(radius: 6)
+    cell.setCloseImage(with: "p_close") //default: non, but button's title is "X".
+    cell.setAnimationType(type: .springs_Ani) // default: .normal_Ani
+    
     return cell
 }
 ```
