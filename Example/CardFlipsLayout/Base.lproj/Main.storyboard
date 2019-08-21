@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -18,14 +18,14 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="QKI-Lj-Vtq">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="b1N-nl-iGe">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="XZb-8C-NoJ">
                                     <size key="itemSize" width="50" height="50"/>
@@ -45,9 +45,9 @@
                             <constraint firstItem="QKI-Lj-Vtq" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="6Jk-Df-7SU"/>
                             <constraint firstItem="QKI-Lj-Vtq" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="DfD-jG-lJ8"/>
                             <constraint firstItem="b1N-nl-iGe" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="KEb-j6-wvj"/>
-                            <constraint firstItem="b1N-nl-iGe" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" id="Pzo-1d-SRm"/>
+                            <constraint firstItem="b1N-nl-iGe" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Pzo-1d-SRm"/>
                             <constraint firstAttribute="trailing" secondItem="QKI-Lj-Vtq" secondAttribute="trailing" id="RCH-ni-Y9I"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="QKI-Lj-Vtq" secondAttribute="bottom" id="Ra3-HF-OHB"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="QKI-Lj-Vtq" secondAttribute="bottom" constant="-34" id="Ra3-HF-OHB"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="b1N-nl-iGe" secondAttribute="bottom" id="fca-hn-htn"/>
                             <constraint firstAttribute="trailing" secondItem="b1N-nl-iGe" secondAttribute="trailing" id="zlb-F7-Tex"/>
                         </constraints>
@@ -58,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="128.80000000000001" y="132.68365817091455"/>
+            <point key="canvasLocation" x="128.80000000000001" y="132.26600985221674"/>
         </scene>
     </scenes>
     <resources>

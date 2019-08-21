@@ -26,7 +26,7 @@
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P1j-g7-T63">
-                        <rect key="frame" x="103" y="20" width="44" height="28"/>
+                        <rect key="frame" x="103" y="41" width="44" height="28"/>
                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -36,7 +36,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rZP-a4-qek">
                         <rect key="frame" x="8" y="358" width="234" height="114"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaF-0J-5x1">
+                            <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaF-0J-5x1">
                                 <rect key="frame" x="0.0" y="0.0" width="234" height="114"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
@@ -60,12 +60,12 @@
                         </constraints>
                     </view>
                     <button opaque="NO" alpha="0.0" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pMd-Vq-hbf">
-                        <rect key="frame" x="210" y="8" width="32" height="32"/>
+                        <rect key="frame" x="210" y="36" width="32" height="32"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="pMd-Vq-hbf" secondAttribute="height" multiplier="1:1" id="3iQ-Oi-C6j"/>
                         </constraints>
-                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                        <state key="normal" title="X"/>
+                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="16"/>
+                        <state key="normal" title="⊠"/>
                         <connections>
                             <action selector="close:" destination="gTV-IL-0wX" eventType="touchUpInside" id="PFp-bL-dZI"/>
                         </connections>
@@ -78,10 +78,10 @@
                 <constraint firstItem="rZP-a4-qek" firstAttribute="top" secondItem="iyd-5B-Sat" secondAttribute="bottom" constant="8" id="Cet-qJ-vlH"/>
                 <constraint firstItem="rZP-a4-qek" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Dyi-Ib-8bK"/>
                 <constraint firstItem="P1j-g7-T63" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="QMu-m1-yDj"/>
-                <constraint firstItem="P1j-g7-T63" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="20" id="QgI-R9-Hhk"/>
+                <constraint firstItem="P1j-g7-T63" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="41" id="QgI-R9-Hhk"/>
                 <constraint firstAttribute="bottom" secondItem="rZP-a4-qek" secondAttribute="bottom" constant="8" id="XIH-wS-MGJ"/>
                 <constraint firstItem="iyd-5B-Sat" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Yni-Dg-IxU"/>
-                <constraint firstItem="pMd-Vq-hbf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="Zw6-ku-TJA"/>
+                <constraint firstItem="pMd-Vq-hbf" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="36" id="Zw6-ku-TJA"/>
                 <constraint firstAttribute="trailing" secondItem="iyd-5B-Sat" secondAttribute="trailing" id="dSz-TR-JU3"/>
                 <constraint firstAttribute="trailing" secondItem="rZP-a4-qek" secondAttribute="trailing" constant="8" id="gGg-rV-LhF"/>
                 <constraint firstItem="iyd-5B-Sat" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xho-W3-UEc"/>

@@ -14,7 +14,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     fileprivate var items: [Items] {
         let p1 = Items(name: "Qixingtan", image: "Qixingtan", description: "Qixing Lake (七星潭) is located in Beipu Village, Xincheng Township, in the northeast of Hualien City. Visitors can get there via Meilun Industrial Park by following the signs in front of the National Hualien University of Education. The beach there has an elegant arch shape. The seawater there is clean and blue. The black stones there are crystal. From here visitors can see the great green mountains afar and the twisting highways.")
         
-        let p2 = Items(name: "Taroko", image: "Taroko", description: "When Taroko National Park (太魯閣國家公園) was established on November 28, l986, it was of special significance for the environmental protection movement in Taiwan: it showed that both the public and the government agencies had realized that against the background of the nation's four decades of extraordinary economic success, serious damage was being done to its natural resources. According to the National Park Act of the Republic of China (passed in l972), parks are established to protect the natural scenery, historic relics and wildlife; to conserve natural resources; and to facilitate scientific research and promote environmental education.")
+        let p2 = Items(name: "Taroko", image: "Taroko", description: "When Taroko National Park (太魯閣國家公園) was established on November 28, l986, it was of special significance for the environmental protection movement in Taiwan: it showed that both the public and the government agencies had realized that against the background of the nation's four decades of extraordinary economic success, serious damage was being done to its natural resources. According to the National Park Act of the Republic of China (passed in l972), parks are established to protect the natural scenery, historic relics and wildlife; to conserve natural resources; and to facilitate scientific research and promote environmental education.When Taroko National Park (太魯閣國家公園) was established on November 28, l986, it was of special significance for the environmental protection movement in Taiwan: it showed that both the public and the government agencies had realized that against the background of the nation's four decades of extraordinary economic success, serious damage was being done to its natural resources. According to the National Park Act of the Republic of China (passed in l972), parks are established to protect the natural scenery, historic relics and wildlife; to conserve natural resources; and to facilitate scientific research and promote environmental education.")
         
         let p3 = Items(name: "Xinliao", image: "Xinliao", description: "Xinliao Waterfall (新寮瀑布) is a great, swimmable waterfall in Yilan, Dongshan Township (宜蘭縣冬山鄉). The start of the trail is at the Dongshan Forest Police Station. There are bathrooms, vendors, and ample parking. It's free, but you have to register on your way in. The path is well made, and only an 850 meter hike to a large viewing platform in front of the waterfall.")
         
@@ -26,7 +26,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        overviewView.collectionViewLayout = FlowLayout(itemSize: CollectionViewCell.cellSize);
+        overviewView.collectionViewLayout = FlowLayout(itemSize: CollectionViewCell.cellSize());
         overviewView.decelerationRate = UIScrollViewDecelerationRateFast
         
         let bundle = Bundle(for: CollectionViewCell.self)
@@ -56,7 +56,7 @@ extension ViewController {
         
         //Custom
         cell.setCornerRadius(radius: 6)
-        cell.setCloseImage(with: "p_close") //default: non, but button's title is "X".
+        cell.setCloseImage(with: "p_error") //default: non, but button's title is "⊠".
         cell.setAnimationType(type: .springs_Ani) // default: .normal_Ani
         return cell
     }

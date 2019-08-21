@@ -35,7 +35,12 @@ open class CollectionViewCell: UICollectionViewCell, UIGestureRecognizerDelegate
 
     private var cornerRadius: CGFloat = 6
     
-    public static let cellSize = CGSize(width: 250, height: 350)
+    public static let cellSize = { () -> CGSize in
+        let screenWidth = UIScreen.main.bounds.size.width
+        let screenHeight = UIScreen.main.bounds.size.height
+        
+        return CGSize(width: screenWidth / 1.6, height: screenHeight / 2.0)
+    }
     public static let identifier = "CollectionViewCell"
     
     @IBOutlet weak var titleLab: UILabel!
@@ -57,7 +62,9 @@ open class CollectionViewCell: UICollectionViewCell, UIGestureRecognizerDelegate
         return getAnimator()
     }()
     
-    private let popupOffset: CGFloat = (UIScreen.main.bounds.height - cellSize.height)/2.0
+    private let popupOffset: CGFloat = {
+        return (UIScreen.main.bounds.height - cellSize().height)/2.0
+    }()
     private lazy var panRecognizer: UIPanGestureRecognizer = {
         let recognizer = UIPanGestureRecognizer()
         recognizer.addTarget(self, action: #selector(popupViewPanned(recognizer:)))
