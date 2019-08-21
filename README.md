@@ -21,7 +21,7 @@ To run the example project, clone the repo, and run `pod install` from the Examp
 
 ## Requirements
 
-iOS 10 and later.
+iOS 10 and later. (iPhone)
 
 Swift 4.2
 
@@ -97,7 +97,7 @@ func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath:
 
 //Custom
     cell.setCornerRadius(radius: 6)
-    cell.setCloseImage(with: "p_close") //default: non, but button's title is "X".
+    cell.setCloseImage(with: "p_error") //default: non, but button's title is "⊠".
     cell.setAnimationType(type: .springs_Ani) // default: .normal_Ani
     
     return cell
